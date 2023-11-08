@@ -1,0 +1,143 @@
+/*options de renitialisation de certains parametre par defauts*/
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    box-sizing: content-box;
+    color: white;
+    background-image: url('earth-11015_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+h1{
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+/*style du container principale*/
+.container{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(94, 92, 92);
+}
+/*style du conainter d'affichage*/
+.ecran{
+    
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#affichage{
+    width: 560px;
+    height: 20px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: right;
+    background-color: white;
+    margin: 5px;
+    color: black;
+}
+.ecran input{
+    margin: 5px;
+    width: 560px;
+    height: 90px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(94, 92, 92);
+    border-top: 1px dashed black;
+    border-left: 1px dashed black;
+    border-right: 1px dashed black;
+    font-size: 25px;
+    word-wrap: break-word;
+    letter-spacing: normal;
+}
+.ecran input:focus{
+  outline: none;
+}
+/*style des bouttons*/
+.bouttons{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+/*style des fonctions*/
+.options{
+    margin-left: 5px;
+    width: 350px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.options li{
+    margin: 2px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: rgb(68, 67, 67);
+}
+.options li:hover{
+    background-color: white;
+    color: black;
+}
+/*style des chiffres*/
+.chiffres{
+    width: auto;
+    height: 300px;
+    display: grid;
+    padding-left: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.chiffres li{
+    background-color: black;
+  
+}
+.operateurs{
+    width: 100%;
+    height: 300px;
+    padding-left: 10px;
+}
+.operateurs li{
+    padding-bottom: 6px;
+    background-color: orange;
+}
+.operateurs li:hover{
+    background-color: rgb(73, 50, 7);
+}
+/*sryle des operateurs*/
+.operateurs{
+    width: 50px;
+    height: 300px;
+}
+
+/*style de bordure operateurs et chiffres*/
+.operateurs li,
+.chiffres li{
+    margin: 2px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+

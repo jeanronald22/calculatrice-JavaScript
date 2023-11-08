@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculatrice.css">
+
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="container"><!--container principale pour contenir tous les bouttons et ecran principale-->
+        <!--zone de saisi et d'affichage de resultats-->
+        <h1>CALCULATRICE</h1>
+        <div class="ecran">
+            <input type="text" id="text">
+            <div id="affichage">0</div>
+        </div>
+        <!--container de bouttons-->
+        <div class="bouttons">
+            <!--boutons d'options-->
+            <ul class="options">
+                <li class="btn-number">(</li>
+                <li class="btn-number">)</li>
+                <li class="btn-number">%</li>
+                <li class="radian">Rad</li>
+                <li class="degre">Deg</li>
+                <li id="x-carre"><span>x<sup>2</sup></span></li>
+                <li class="x-b"><span>x<sup>b</sup></span></li>
+                <li class="abs">|x|</li>
+                <li class="fleche-gauche">&larr;</li>
+                <li class="fleche-droit">&rarr;</li>
+                <li class="racine-carre">&radic;x</li>
+                <li class="racine-x"><span><sup>x</sup>&radic;x</span></li>
+                <li class="expo"><span>e<sup>x</sup></span></li>
+                <li class="fonct-puissance"><span>10 <sup>x</sup></span></li>
+                <li class="sin">sin</li>
+                <li class="cos">cos</li>
+                <li class="tan">tan</li>
+                <li class="arc-sin">arc-sin</li>
+                <li class="arc-cos">arc-cos</li>
+                <li class="arc-tan">arc-tan</li>
+                <li class="ln">ln</li>
+                <li class="log">log</li>
+                <li class="factorielle">x!</li>
+                <li class="nbr-e">e</li>
+                <li class="nbr-pi">&pi;</li>
+            </ul>
+            <!--chiffres-->
+            <ul class="chiffres">
+                <li id="clean">AC</li>
+                <li id="sup">SUP</li>
+                <li id="egalle">ANS</li>
+                <li class="btn-number">1</li>
+                <li class="btn-number">2</li>
+                <li class="btn-number">3</li>
+                <li class="btn-number">4</li>
+                <li class="btn-number">5</li>
+                <li class="btn-number">6</li>
+                <li class="btn-number">7</li>
+                <li class="btn-number">8</li>
+                <li class="btn-number">9</li>
+                <li class="btn-number">0</li>
+                <li class="btn-number">,</li>
+                <li class="btn-number">.</li>
+            </ul>
+            <!--operateurs-->
+            <ul class="operateurs">
+                <li class="btn-number">/</li>
+                <li class="btn-number">*</li>
+                <li class="btn-number">-</li>
+                <li class="btn-number">+</li>
+                <li id="egalle">=</li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="calculatrice.js"></script>
+</body>
+</html>
