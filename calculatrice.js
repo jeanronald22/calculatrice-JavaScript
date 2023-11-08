@@ -21,6 +21,14 @@ function carrer(){
     val=val*val;
     output.textContent=val;
 }
+//function xpuissance b
+function puissance(){
+    let val=input.value;
+    let b=parseInt(prompt('entre la puissance'));
+    val=Math.pow(val, b);
+    output.textContent=val;
+}
+
 //recuperation de tous les chiffres et operateurs
 let chiffres=[...document.querySelectorAll('.btn-number ')];
 //evenements
@@ -47,4 +55,28 @@ clean.addEventListener('click', function(){
 let carre=document.getElementById('x-carre');
 carre.addEventListener('click', function(){
     carrer();
+})
+
+let bCarre=document.getElementById('x-b');
+bCarre.addEventListener('click', function(){
+   puissance();
+})
+
+let abs=document.getElementById('abs');
+abs.addEventListener('click', function(){
+    let resul=Math.abs(input.value);
+    output.textContent=resul;
+})
+
+let racine=document.getElementById('racine-carre');
+racine.addEventListener('click', function(){
+    let resul=Math.sqrt(input.value);
+    output.textContent=resul;
+})
+
+let xRacine=document.getElementById('racine-x');
+xRacine.addEventListener('click', function(){
+    let x=parseInt(prompt('entre x'));
+    output.textContent=Math.pow(input.value, 1/x);
+
 })
