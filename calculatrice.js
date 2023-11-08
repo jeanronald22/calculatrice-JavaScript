@@ -79,4 +79,53 @@ xRacine.addEventListener('click', function(){
     let x=parseInt(prompt('entre x'));
     output.textContent=Math.pow(input.value, 1/x);
 
+});
+
+let expo=document.getElementById('expo');
+expo.addEventListener('click', function(){
+    output.textContent=Math.exp(input.value);
+});
+let sin=document.getElementById('sin');
+sin.addEventListener('click', function(){
+    output.textContent=Math.sin(input.value);
+});
+document.getElementById('cos').addEventListener('click', function(){
+    output.textContent=Math.cos(input.value);
+});
+document.getElementById('tan').addEventListener('click', function(){
+    output.textContent=Math.tan(input.value);
+});
+document.getElementById('arc-sin').addEventListener('click', function(){
+    output.textContent=Math.asin(input.value);
+});
+document.getElementById('arc-cos').addEventListener('click', function(){
+    output.textContent=Math.acos(input.value);
+});
+document.getElementById('arc-tan').addEventListener('click', function(){
+    output.textContent=Math.atan(input.value);
+});
+let ln=document.getElementById('ln').addEventListener('click', function(){
+    output.textContent=Math.ln(input.value);
+});
+let log=document.getElementById('log').addEventListener('click', function(){
+    output.textContent=Math.log(input.value);
+});
+let fac=document.getElementById('factorielle').addEventListener('click', function(){
+        if(input.value<0){
+            output.textContent='impossible';
+        }else if(input.value==0){
+            output.textContent=1;
+        }else{
+            let fac=1;
+            for(let i=1;i<=input.value;i++){
+                fac=fac*i;
+            }
+            output.textContent=fac;
+        }
+});
+document.getElementById('nbr-e').addEventListener('click', function(){
+    input.value+=Math.E;
+})
+document.getElementById('nbr-pi').addEventListener('click', function(){
+    input.value+=Math.PI;
 })
